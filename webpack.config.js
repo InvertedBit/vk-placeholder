@@ -29,6 +29,13 @@ module.exports = {
                 generator: {
                     filename: 'dist/fonts/[hash][ext][query]'
                 }
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif)$/,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'dist/images/[hash][ext][query]'
+                }
             }
         ]
     },
