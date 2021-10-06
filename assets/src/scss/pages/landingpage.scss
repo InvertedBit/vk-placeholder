@@ -25,7 +25,12 @@
             margin-left: auto;
             margin-right: auto;
             max-width: 1200px;
-            min-width: 600px;
+            @media (min-width: 480px) {
+                min-width: 480px;
+            }
+            @media (min-width: 1000px) {
+                min-width: 1000px;
+            }
             width: 90vw;
             position: relative;
         }
@@ -47,6 +52,14 @@
             //top: 10vh;
             cursor: pointer;
             width: calc(100% - 30px);
+            @media (min-width: 480px) {
+                min-width: 480px;
+            }
+            @media (min-width: 1000px) {
+                min-width: 1000px;
+            }
+
+            background-size: cover;
             
             &:hover {
                 //width: 90vw;
@@ -68,7 +81,12 @@
             
             .link-text {
                 font-family: $header-title-font-family;
-                font-size: 61px;
+                @media (min-width: 500px) {
+                    font-size: 30px;
+                }
+                @media (min-width: 1000px) {
+                    font-size: 61px;
+                }
                 position: relative;
                 top: calc(75% - 38px);
                 width: inherit;
@@ -81,7 +99,7 @@
         .link-painting {
             //background-image: url('../../static/img/DSC018841o.R.JPG');
             //background-size: cover;
-            background-size: 90vw;
+            //background-size: 90vw;
             //clip-path: polygon(0% 0%, 100% 0%, calc(100% - #{$imageCutoffPercent}) 100%, 0% 100%);
             clip-path: polygon(0% 0%, calc(100% - #{$imageCutoffPercent}) 0%, #{$imageCutoffPercent} 100%, 0% 100%);
             //left: calc(5vw - 5px);
@@ -109,7 +127,7 @@
             //background-image: url('../../static/img/header-movie01.png');
             background-position: right;
             //background-size: cover;
-            background-size: 90vw;
+            //background-size: 90vw;
             //clip-path: polygon(#{$imageCutoffPercent} 0%, 100% 0%, 100% 100%, 0% 100%);
             clip-path: polygon(calc(100% - #{$imageCutoffPercent}) 0%, 100% 0%, 100% 100%, #{$imageCutoffPercent} 100%);
             //right: calc(5vw - 5px);
@@ -219,7 +237,7 @@
             }
 
             .link-movies {
-                background-position: center;
+                background-position: top;
                 //background-image: url('../../images/header-movie01.png');
             }
 
