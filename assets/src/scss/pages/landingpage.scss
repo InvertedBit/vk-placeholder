@@ -46,7 +46,7 @@
             //float: left;
             //top: 10vh;
             cursor: pointer;
-            width: 100%;
+            width: calc(100% - 30px);
             
             &:hover {
                 //width: 90vw;
@@ -100,7 +100,7 @@
             }
             .link-text {
                 color: #ffffff;
-                background-color: $colourtheme-3;
+                background-color: $colourtheme-2;
                 padding-left: 30px;
             }     
         }
@@ -129,7 +129,7 @@
             }
             .link-text {
                 color: #ffffff;
-                background-color: $colourtheme-comp-3;
+                background-color: $colourtheme-comp-2;
                 padding-right: 30px;
             }     
         }
@@ -214,12 +214,26 @@
             }
 
             .link-painting {
-                background-image: url('../../images/image_ph_painting.jpg');
+                background-position: center;
+                //background-image: url('./images/image_ph_painting.jpg');
             }
 
-            //.link-movies {
+            .link-movies {
+                background-position: center;
                 //background-image: url('../../images/header-movie01.png');
-            //}
+            }
+
+            .contact-container {
+                a {
+                    &:link, &:visited {
+                        color: $colourtheme-1;
+                    }
+                    &:hover {
+                        color: white;
+                        color: rgba($colourtheme-1, 0.7);
+                    }
+                }
+            }
         }
     }
 }
