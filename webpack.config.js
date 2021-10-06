@@ -30,13 +30,13 @@ module.exports = {
                     filename: 'dist/fonts/[hash][ext][query]'
                 }
             },
-            {
-                test: /\.(png|jpg|jpeg|gif)$/,
-                type: 'asset/resource',
-                generator: {
-                    filename: 'dist/images/[hash][ext][query]'
-                }
-            }
+            //{
+                //test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                //type: 'asset/resource',
+                ////generator: {
+                    ////filename: 'dist/images/[hash][ext][query]'
+                ////}
+            //}
         ]
     },
     plugins: [
